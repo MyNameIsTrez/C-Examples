@@ -13,15 +13,23 @@ int	main(void)
 	int	**pp = &p;
 
 
-	printf("\n");
+	printf("\n\n");
 
 
 	printf("int	i = 42;\n");
 	printf("int	*p = &i;\n");
-	printf("int	**pp = &p;\n");
+	printf("int	**pp = &p;\n\n\n");
 
 
-	printf("\n\n");
+	printf(
+		"+------+----------------+----------------+\n"
+		"| NAME |      VALUE     |     ADDRESS    |\n"
+		"+------+----------------+----------------+\n"
+		"|  i   |       %i       | %p |\n"
+		"|  *p  | %14p | %p |\n"
+		"|  **p | %14p | %p |\n"
+		"+------+----------------+----------------+\n\n\n"
+	, i, &i, p, &p, pp, &pp);
 
 
 	printf("i: %d\n", i);
@@ -41,5 +49,7 @@ int	main(void)
 	printf("*pp: %p\n", *pp);
 	printf("**pp: %d\n\n", **pp);
 
+
+	printf("\n");
 	return (0);
 }

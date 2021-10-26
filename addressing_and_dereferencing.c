@@ -1,5 +1,5 @@
 /*
-gcc -Wall -Wextra malloc.c && ./a.out
+gcc -Wall -Wextra addressing_and_dereferencing.c && ./a.out
 */
 
 
@@ -12,7 +12,7 @@ int	main(void)
 	char	*str;
 
 
-	printf("\n");
+	printf("\n\n");
 
 
 	printf("char	*str;\n\n\n");
@@ -72,5 +72,6 @@ int	main(void)
 	printf("*(*(&str)): %c // = *str\n\n", *(*(&str)));
 
 
+	printf("\n");
 	return (0);
 }
