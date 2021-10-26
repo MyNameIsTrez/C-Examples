@@ -1,5 +1,5 @@
 /*
-gcc pointers.c && ./a.out
+gcc -Wall -Wextra pointers.c && ./a.out
 */
 
 

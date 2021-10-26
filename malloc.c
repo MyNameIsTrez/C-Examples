@@ -1,5 +1,5 @@
 /*
-gcc malloc.c && ./a.out
+gcc -Wall -Wextra malloc.c && ./a.out
 */
 
 
