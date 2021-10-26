@@ -44,16 +44,16 @@ int	main(void)
 	printf("str[2]                   : %c\n", str[2]);
 	printf("str[3]                   : \\0\n\n");
 
-	printf("*(str + 0 * sizeof(char)): %c\n", *(str + 0 * sizeof(char)));
+	printf("*(str + 0 * sizeof(char)): %c // sizeof(char) is equal to 1 so it can be left out, but it's there for consistency as you DO need it for non-chars\n", *(str + 0 * sizeof(char)));
 	printf("*(str + 1 * sizeof(char)): %c\n", *(str + 1 * sizeof(char)));
 	printf("*(str + 2 * sizeof(char)): %c\n", *(str + 2 * sizeof(char)));
 	printf("*(str + 3 * sizeof(char)): \\0\n\n\n");
 
 
-	printf("&(str[0])             : %p\n", &(str[0]));
-	printf("&(str[1])             : %p\n", &(str[1]));
-	printf("&(str[2])             : %p\n", &(str[2]));
-	printf("&(str[3])             : %p\n\n", &(str[3]));
+	printf("&str[0]               : %p // the [0] is executed before the &\n", &str[0]);
+	printf("&str[1]               : %p\n", &str[1]);
+	printf("&str[2]               : %p\n", &str[2]);
+	printf("&str[3]               : %p\n\n", &str[3]);
 
 	printf("str + 0 * sizeof(char): %p\n", str + 0 * sizeof(char));
 	printf("str + 1 * sizeof(char): %p\n", str + 1 * sizeof(char));
