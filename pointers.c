@@ -27,7 +27,7 @@ int	main(void)
 	printf("i: %d\n", i);
 	printf("&i: %p\n\n", &i);
 
-	printf("*i: error, because you can only dereference pointers\n\n\n");
+	printf("*i: ERROR // you can only dereference pointers\n\n\n");
 
 
 	printf("p: %p\n", p);
