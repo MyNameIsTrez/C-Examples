@@ -72,7 +72,5 @@ int	main(void)
 	printf("*(*(&str)): %c // = *str\n\n", *(*(&str)));
 
 
-	// system("leaks tester");
-
 	return (0);
 }
